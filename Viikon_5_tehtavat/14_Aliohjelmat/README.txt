@@ -26,6 +26,6 @@ END IF;
     SELECT 'Arvosana Ei välillä 0-5';
 	LEAVE Aliohjelma;
 END IF;
-INSERT INTO Arviointi VALUES(NULL,Arvo,CURDATE(),Stdnt,Period);
+INSERT INTO Arviointi VALUES(NULL,Arvo,CURDATE(),Period,Stdnt);
 
 END
